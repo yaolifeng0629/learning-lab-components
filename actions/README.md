@@ -30,6 +30,7 @@ If you're interested in contributing to the evolution of these actions, we would
 - [mergePullRequest](./mergePullRequest)
 - [octokit](./octokit)
 - [removeBranchProtection](./removeBranchProtection)
+- [reopenIssue](./reopenIssue)
 - [requestReviewFromRegistrant](./requestReviewFromRegistrant)
 - [respond](./respond)
 - [updateBranchProtection](./updateBranchProtection)

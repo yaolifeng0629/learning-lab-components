@@ -24,6 +24,7 @@ Array [
   "mergePullRequest",
   "octokit",
   "removeBranchProtection",
+  "reopenIssue",
   "requestReviewFromRegistrant",
   "respond",
   "updateBranchProtection",
