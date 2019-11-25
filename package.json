@@ -1,6 +1,6 @@
 {
   "name": "@github/learning-lab-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Open sourced components from GitHub Learning Lab",
   "author": "GitHub, Inc. <opensource+learning-lab-components@github.com>",
   "license": "MIT",
@@ -46,23 +46,23 @@
     "test": "standard && jest --coverage"
   },
   "dependencies": {
-    "@octokit/rest": "^15.18.1",
+    "@octokit/rest": "^15.18.3",
     "get-value": "^3.0.1",
     "has": "^1.0.3",
     "htmlparser2": "^4.0.0"
   },
   "peerDependencies": {
-    "@hapi/joi": "^16.0.0-rc2"
+    "@hapi/joi": "^16.1.7"
   },
   "devDependencies": {
-    "@hapi/joi": "^16.0.0-rc2",
-    "enquirer": "^2.3.1",
+    "@hapi/joi": "^16.1.7",
+    "enquirer": "^2.3.2",
     "jest": "^24.9.0",
     "js-yaml": "^3.13.1",
     "lodash.isplainobject": "^4.0.6",
-    "nock": "^10.0.6",
+    "nock": "^11.7.0",
     "probot": "^7.5.3",
-    "standard": "^14.0.2"
+    "standard": "^14.3.1"
   },
   "standard": {
     "env": [

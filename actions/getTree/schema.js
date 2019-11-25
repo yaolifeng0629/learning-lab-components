@@ -10,13 +10,11 @@ module.exports = Joi.object({
     .default(false)
 })
   .description('Gets a Git tree at either a given sha or the head of master')
-  .example(
-    [
-      {},
-      { context: 'Get the tree at the current SHA:' }
-    ],
-    [
-      { recursive: true },
-      { context: 'Get a recursive tree, to include files nested in directories:' }
-    ]
-  )
+  .example([
+    {},
+    { context: 'Get the tree at the current SHA:' }
+  ])
+  .example([
+    { recursive: true },
+    { context: 'Get a recursive tree, to include files nested in directories:' }
+  ])

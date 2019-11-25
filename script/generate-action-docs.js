@@ -30,11 +30,11 @@ function mapChildrenToRows (children) {
     const opt = children[key]
     const cells = [
       // Label
-      opt.meta && opt.meta[0] && opt.meta[0].label,
+      opt.metas && opt.metas[0] && opt.metas[0].label,
       // Property
       `\`${key}\``,
       // Description
-      opt.description || '',
+      opt.flags && opt.flags.description ? opt.flags.description : '',
       // Default value
       opt.flags && opt.flags.default ? `\`${opt.flags.default}\`` : '',
       // Required
@@ -72,13 +72,13 @@ function mapExamples (examples, key) {
  */
 function generate (actionKey) {
   const schema = actions[actionKey].schema.describe()
-  const rows = mapChildrenToRows(schema.children)
+  const rows = mapChildrenToRows(schema.keys)
   const examples = schema.examples ? mapExamples(schema.examples, actionKey) : ''
 
   return template({
     key: actionKey,
-    title: (schema.meta && schema.meta[0] && schema.meta[0].label) || actionKey,
-    description: schema.description || '',
+    title: (schema.metas && schema.metas[0] && schema.metas[0].label) || actionKey,
+    description: schema.flags.description || '',
     rows,
     examples
   })

@@ -8,6 +8,8 @@ module.exports = async (context, opts) => {
     if (!realStates.includes(opts.state)) {
       const stateString = context.getValueFromContext(opts.state)
       state = stateString ? 'success' : 'failure'
+    } else {
+      state = opts.state
     }
   } else if (typeof opts.state === 'object') {
     const data = context.getValuesFromContext(opts.state)

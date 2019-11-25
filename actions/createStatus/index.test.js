@@ -23,6 +23,12 @@ describe('createStatus', () => {
     expect(context.github.repos.createStatus.mock.calls).toMatchSnapshot()
   })
 
+  it('creates a status with expected state', async () => {
+    await createStatus(context, { state: 'success' })
+    expect(context.github.repos.createStatus).toHaveBeenCalled()
+    expect(context.github.repos.createStatus.mock.calls).toMatchSnapshot()
+  })
+
   it('creates a status with a gate-ish string', async () => {
     await createStatus(context, { state: '%payload.pull_request.body%' })
     expect(context.github.repos.createStatus).toHaveBeenCalled()

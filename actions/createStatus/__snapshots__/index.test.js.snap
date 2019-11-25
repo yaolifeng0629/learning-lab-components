@@ -42,3 +42,17 @@ Array [
   ],
 ]
 `;
+
+exports[`createStatus creates a status with expected state 1`] = `
+Array [
+  Array [
+    Object {
+      "context": "my-step",
+      "owner": "JasonEtco",
+      "repo": "example",
+      "sha": 123,
+      "state": "success",
+    },
+  ],
+]
+`;

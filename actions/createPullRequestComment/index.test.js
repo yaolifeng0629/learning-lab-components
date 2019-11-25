@@ -18,7 +18,7 @@ describe('createPullRequestComment', () => {
     const reg = new RegExp(`/repos/${owner}/${repo}/pulls/\\d+/comments`)
     nocked = nock('https://api.github.com')
       .post(reg)
-      .reply(201, (url, opts) => ({ url, opts: JSON.parse(opts) }))
+      .reply(201, (url, opts) => ({ url, opts }))
   })
 
   it('creates a PR comment on the PR in the payload', async () => {

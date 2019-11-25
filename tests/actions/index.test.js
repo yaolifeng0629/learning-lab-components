@@ -62,8 +62,8 @@ ${actionNames.map(name => `- [${name}](./${name})`).join('\n')}
       const schema = action.schema.describe()
 
       it('has a description', () => {
-        expect(typeof schema.description).toBe('string')
-        expect(schema.description.length).toBeGreaterThan(0)
+        expect(typeof schema.flags.description).toBe('string')
+        expect(schema.flags.description.length).toBeGreaterThan(0)
       })
 
       it('has at least one example', () => {
