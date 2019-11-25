@@ -16,7 +16,7 @@ module.exports = Joi.object({
       gate
     )
     .meta({ label: 'State' })
-    .description('The state of the status to create.')
+    .description('The state of the status to create: `pending`, `failure`, or `success`')
     .required(),
   error: state.meta({ label: 'Error' }),
   pending: state.meta({ label: 'Pending' }),
