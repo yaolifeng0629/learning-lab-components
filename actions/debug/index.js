@@ -1,4 +1,4 @@
-module.exports = async context => {
+module.exports = async (context, opts) => {
   if (!context.courseVersion.draft) return
   const url = `https://smee.io/${context.course.slug}-${context.user.login}`
   await context.github.repos.createHook(context.repo({
