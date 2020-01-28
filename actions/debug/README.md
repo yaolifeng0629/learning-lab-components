@@ -16,8 +16,4 @@ Send repository payload information to smee.io:
 type: debug
 ```
 
-## Options
-
-| Title | Property | Description | Default | Required |
-| :---- | :--- | :---------- | :------ | :------- |
 
