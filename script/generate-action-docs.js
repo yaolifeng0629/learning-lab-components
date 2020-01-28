@@ -26,6 +26,7 @@ ${rows}
  * Convert a list of children properties into table rows.
  */
 function mapChildrenToRows (children) {
+  if (!children) return ''
   return Object.keys(children).reduce((prev, key) => {
     const opt = children[key]
     const cells = [
