@@ -13,6 +13,7 @@ Array [
   "createReview",
   "createStatus",
   "deleteBranch",
+  "enablePages",
   "findInTree",
   "gate",
   "getFileContents",

@@ -19,6 +19,7 @@ If you're interested in contributing to the evolution of these actions, we would
 - [createReview](./createReview)
 - [createStatus](./createStatus)
 - [deleteBranch](./deleteBranch)
+- [enablePages](./enablePages)
 - [findInTree](./findInTree)
 - [gate](./gate)
 - [getFileContents](./getFileContents)
