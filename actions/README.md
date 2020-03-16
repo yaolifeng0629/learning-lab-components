@@ -67,6 +67,7 @@ Here's what you can do to help:
 8. Update the contents of the aforementioned files to bring your action to life!
   Be sure to execute `npm test` as you work to verify your syntax and test results.
 9. When you think your action is ready, execute `npm run doc` to regenerate the action-specific `actions/${actionName}/README.md`. Review the content to ensure it is to your liking.
-10. Commit all of your changes to the branch.
-11. Push that branch to your remote repository.
-12. Create a new [Pull Request](https://github.com/github/learning-lab-components/pulls) in this repository.
+10. Run `npm test -- -u` to update the snapshots.
+11. Commit all of your changes to the branch.
+12. Push that branch to your remote repository.
+13. Create a new [Pull Request](https://github.com/github/learning-lab-components/pulls) in this repository.
