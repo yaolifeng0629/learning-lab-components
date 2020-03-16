@@ -41,7 +41,7 @@ context: my-special-context
 
 | Title | Property | Description | Default | Required |
 | :---- | :--- | :---------- | :------ | :------- |
-| State | `state` | The state of the status to create. |  | ✔ |
+| State | `state` | The state of the status to create: `pending`, `failure`, or `success` |  | ✔ |
 | Error | `error` |  |  |  |
 | Pending | `pending` |  |  |  |
 | Failure | `failure` |  |  |  |
