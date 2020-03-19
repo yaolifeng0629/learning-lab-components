@@ -30,18 +30,9 @@ jobs:
       - run: echo "Released at $RELEASE_URL"
         env:
           RELEASE_URL: ${{ steps.github_release.outputs.release_url }}
-          
-  validate_semver_release:
-    needs: [publish_draft_release_on_version_bump]
-    runs-on: ubuntu-latest
-    steps:
-      # Does a checkout of your repository at the pushed commit SHA
-      - uses: actions/checkout@v1
-      # Validate the Release follows Semantic Versioning rules
-      - uses: JasonEtco/validate-semver-release@master
 
   publish_package_to_gpr:
-    needs: [validate_semver_release]
+    needs: [publish_draft_release_on_version_bump]
     runs-on: ubuntu-latest
     steps:
       # Does a checkout of your repository at the pushed commit SHA
