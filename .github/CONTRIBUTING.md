@@ -43,8 +43,7 @@ Project administrators have permissions to publish new releases to the GitHub Pa
     - `npm version minor`
     - `npm version patch`
 2. Push that commit to the remote repository with `git push`
-3. [Authenticate your NPM client to the GitHub Package Registry](https://help.github.com/en/articles/configuring-npm-for-use-with-github-package-registry#authenticating-to-github-package-registry)
-4. Publish the package to the GitHub Package Registry by executing `npm publish`
+3. The [Release Management workflow](https://github.com/github/learning-lab-components/actions?query=workflow%3A%22Release+Management%22) will handle creating a new git tag, publishing the existing GitHub Release draft notes, and publishing the latest version of the module to the GitHub Package Registry for NPM.
 
 ### Consuming a new version
 
