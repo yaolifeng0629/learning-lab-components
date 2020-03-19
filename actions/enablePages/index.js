@@ -3,9 +3,7 @@ module.exports = async (context, opts) => {
   return context.github.request({
     method: 'POST',
     url: '/repos/:owner/:repo/pages',
-    mediaType: {
-      previews: ['switcheroo']
-    },
+    headers: { accept: 'application/vnd.github.switcheroo+json' },
     owner,
     repo,
     source: {

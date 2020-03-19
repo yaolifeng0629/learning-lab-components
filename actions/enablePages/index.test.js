@@ -11,7 +11,9 @@ describe('enablePages', () => {
     const { owner, repo } = context.repo()
     nocked = nock('https://api.github.com')
       .post(`/repos/${owner}/${repo}/pages`)
-      .reply(201, (url, opts) => ({ url, opts }))
+      .reply(201, function (url, opts) {
+        return { url, opts, headers: this.req.headers }
+      })
   })
 
   it('responds with a 201', async () => {
@@ -24,6 +26,7 @@ describe('enablePages', () => {
     const result = await enablePages(context, { branch: 'pizza' })
     expect(nocked.isDone()).toBe(true)
     expect(result.status).toBe(201)
+    expect(result.data.headers.accept).toEqual(['application/vnd.github.switcheroo+json'])
     expect(result.data.opts.source.branch).toBe('pizza')
     expect(result.data.opts.source.path).toBe('/')
   })
