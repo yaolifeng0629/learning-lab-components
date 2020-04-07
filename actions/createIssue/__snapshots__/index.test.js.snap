@@ -67,3 +67,19 @@ Array [
   ],
 ]
 `;
+
+exports[`createIssue opens an issue with labels 1`] = `
+Array [
+  Array [
+    Object {
+      "body": "a-body.md",
+      "labels": Array [
+        "bug",
+      ],
+      "owner": "JasonEtco",
+      "repo": "example",
+      "title": "My issue",
+    },
+  ],
+]
+`;
