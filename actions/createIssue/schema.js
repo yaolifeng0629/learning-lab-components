@@ -14,6 +14,10 @@ module.exports = Joi.object({
     .meta({ label: 'Comments' })
     .description('A list of response files that will be posted to the issue as comments upon creation.')
     .items(Joi.string()),
+  labels: Joi.array()
+    .meta({ label: 'Labels' })
+    .description('The label or labels to apply to the issue.')
+    .items(Joi.string()),
   data
 })
   .description('Creates a new issue on GitHub.')
