@@ -33,7 +33,7 @@ describe('createIssue', () => {
   })
 
   it('opens an issue with labels', async () => {
-    await createIssue(context, { title: 'My issue', body: 'a-body.md', labels: ['bug'] })
+    await createIssue(context, { title: 'My issue', body: 'a-body.md', labels: ['feature request', 'bug'] })
     expect(context.github.issues.create).toHaveBeenCalled()
     expect(context.github.issues.create.mock.calls).toMatchSnapshot()
   })

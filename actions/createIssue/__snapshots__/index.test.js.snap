@@ -5,6 +5,7 @@ Array [
   Array [
     Object {
       "body": "a-body.md",
+      "labels": undefined,
       "owner": "JasonEtco",
       "repo": "example",
       "title": "My issue",
@@ -74,6 +75,7 @@ Array [
     Object {
       "body": "a-body.md",
       "labels": Array [
+        "feature request",
         "bug",
       ],
       "owner": "JasonEtco",

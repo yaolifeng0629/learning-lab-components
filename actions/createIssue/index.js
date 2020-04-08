@@ -1,19 +1,11 @@
 const has = require('has')
 
 module.exports = async (context, opts) => {
-  let issue
-  if (has(opts, 'labels')) {
-    issue = await context.github.issues.create(context.repo({
-      title: opts.title,
-      body: await context.fromFile(opts.body, opts.data),
-      labels: opts.labels
-    }))
-  } else {
-    issue = await context.github.issues.create(context.repo({
-      title: opts.title,
-      body: await context.fromFile(opts.body, opts.data)
-    }))
-  }
+  const issue = await context.github.issues.create(context.repo({
+    title: opts.title,
+    body: await context.fromFile(opts.body, opts.data),
+    labels: opts.labels
+  }))
 
   if (has(opts, 'comments')) {
     for (const comment of opts.comments) {
