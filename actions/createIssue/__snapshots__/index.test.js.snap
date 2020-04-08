@@ -5,6 +5,7 @@ Array [
   Array [
     Object {
       "body": "a-body.md",
+      "labels": undefined,
       "owner": "JasonEtco",
       "repo": "example",
       "title": "My issue",
@@ -63,6 +64,23 @@ Array [
     "another-comment.md",
     Object {
       "foo": true,
+    },
+  ],
+]
+`;
+
+exports[`createIssue opens an issue with labels 1`] = `
+Array [
+  Array [
+    Object {
+      "body": "a-body.md",
+      "labels": Array [
+        "feature request",
+        "bug",
+      ],
+      "owner": "JasonEtco",
+      "repo": "example",
+      "title": "My issue",
     },
   ],
 ]

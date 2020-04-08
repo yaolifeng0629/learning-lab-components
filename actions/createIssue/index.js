@@ -3,7 +3,8 @@ const has = require('has')
 module.exports = async (context, opts) => {
   const issue = await context.github.issues.create(context.repo({
     title: opts.title,
-    body: await context.fromFile(opts.body, opts.data)
+    body: await context.fromFile(opts.body, opts.data),
+    labels: opts.labels
   }))
 
   if (has(opts, 'comments')) {
