@@ -16,7 +16,7 @@ module.exports = Joi.object({
     .items(Joi.string()),
   labels: Joi.array()
     .meta({ label: 'Labels' })
-    .description('The label or labels to apply to the issue.')
+    .description('A list of labels that will be applied to the issue.')
     .items(Joi.string()),
   data
 })
