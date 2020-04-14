@@ -26,7 +26,7 @@ describe('enablePages', () => {
     const result = await enablePages(context, { branch: 'pizza' })
     expect(nocked.isDone()).toBe(true)
     expect(result.status).toBe(201)
-    expect(result.data.headers.accept).toEqual(['application/vnd.github.switcheroo+json'])
+    expect(result.data.headers.accept).toEqual(['application/vnd.github.switcheroo-preview+json'])
     expect(result.data.opts.source.branch).toBe('pizza')
     expect(result.data.opts.source.path).toBe('/')
   })
