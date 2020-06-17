@@ -13,7 +13,7 @@ module.exports = Joi.object({
   .description('Enable GitHub Pages on the learner\'s repository ')
   .example([
     {},
-    { context: 'Enable GitHub Pages on the `main` branch:' }
+    { context: 'Enable GitHub Pages on the default branch:' }
   ])
   .example([
     { branch: 'gh-pages' },
@@ -24,5 +24,5 @@ module.exports = Joi.object({
       branch: 'main',
       path: '/docs'
     },
-    { context: 'Enable GitHub Pages on the `/docs` folder of the `master` branch:' }
+    { context: 'Enable GitHub Pages on the `/docs` folder of the `main` branch:' }
   ])

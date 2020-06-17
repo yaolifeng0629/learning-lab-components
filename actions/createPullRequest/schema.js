@@ -48,7 +48,7 @@ module.exports = Joi.object({
       title: 'Title of the Pull Request',
       body: 'pull-request-body.md',
       head: 'this-branch',
-      base: 'not-master'
+      base: 'not-default-branch'
     },
     { context: 'Create a pull request to a specified `base` branch:' }
   ])

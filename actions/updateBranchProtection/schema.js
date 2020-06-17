@@ -27,7 +27,7 @@ module.exports = Joi.object({
   .description('Updates the branch protection on a branch in the course repository')
   .example([
     {},
-    { context: 'Add branch protection to the `master` branch:' }
+    { context: 'Add branch protection to the default branch:' }
   ])
   .example([
     { branch: 'my-protected-branch' },
