@@ -37,7 +37,7 @@ type: createPullRequest
 title: Title of the Pull Request
 body: pull-request-body.md
 head: this-branch
-base: not-master
+base: not-default-branch
 ```
 
 ## Options

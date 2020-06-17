@@ -10,7 +10,7 @@ Updates the branch protection on a branch in the course repository
 
 ## Examples
 
-Add branch protection to the `master` branch:
+Add branch protection to the default branch:
 
 ```yaml
 type: updateBranchProtection

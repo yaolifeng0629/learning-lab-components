@@ -10,7 +10,7 @@ Enable GitHub Pages on the learner's repository
 
 ## Examples
 
-Enable GitHub Pages on the `main` branch:
+Enable GitHub Pages on the default branch:
 
 ```yaml
 type: enablePages
@@ -23,7 +23,7 @@ type: enablePages
 branch: gh-pages
 ```
 
-Enable GitHub Pages on the `/docs` folder of the `master` branch:
+Enable GitHub Pages on the `/docs` folder of the `main` branch:
 
 ```yaml
 type: enablePages

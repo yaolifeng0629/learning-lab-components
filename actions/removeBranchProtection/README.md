@@ -10,7 +10,7 @@ Removes the branch protection on a branch in the course repository
 
 ## Examples
 
-Remove branch protection from the `master` branch:
+Remove branch protection from the default branch:
 
 ```yaml
 type: removeBranchProtection

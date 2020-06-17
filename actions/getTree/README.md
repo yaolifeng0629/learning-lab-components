@@ -6,7 +6,7 @@
 
 # `getTree`
 
-Gets a Git tree at either a given sha or the head of master
+Gets a Git tree at either a given sha or the head of the default branch
 
 ## Examples
 
