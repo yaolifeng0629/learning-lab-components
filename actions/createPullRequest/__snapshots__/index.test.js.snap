@@ -4,7 +4,7 @@ exports[`createPullRequest opens a pull request 1`] = `
 Array [
   Array [
     Object {
-      "base": "master",
+      "base": "main",
       "body": "a-body.md",
       "head": "branch",
       "owner": "JasonEtco",

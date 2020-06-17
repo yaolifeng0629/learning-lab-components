@@ -10,7 +10,7 @@ describe('removeBranchProtection', () => {
     })
   })
 
-  it('removes branch protection on master by default', async () => {
+  it('removes branch protection on `main` by default', async () => {
     await removeBranchProtection(context, {})
     expect(context.github.repos.removeBranchProtection).toHaveBeenCalled()
     expect(context.github.repos.removeBranchProtection.mock.calls).toMatchSnapshot()

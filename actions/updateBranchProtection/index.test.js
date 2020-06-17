@@ -12,7 +12,7 @@ describe('updateBranchProtection', () => {
     })
   })
 
-  it('updates branch protection on master by default', async () => {
+  it('updates branch protection on `main` by default', async () => {
     await updateBranchProtection(context, {})
     expect(context.github.repos.updateBranchProtection).toHaveBeenCalled()
     expect(context.github.repos.updateBranchProtection.mock.calls).toMatchSnapshot()

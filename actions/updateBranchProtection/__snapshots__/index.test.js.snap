@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`updateBranchProtection updates branch protection on master by default 1`] = `
+exports[`updateBranchProtection updates branch protection on \`main\` by default 1`] = `
 Array [
   Array [
     Object {
-      "branch": "master",
+      "branch": "main",
       "enforce_admins": true,
       "owner": "JasonEtco",
       "repo": "example",
