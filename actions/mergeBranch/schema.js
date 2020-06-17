@@ -7,13 +7,12 @@ module.exports = Joi.object({
     .required(),
   base: Joi.string()
     .meta({ label: 'Base branch' })
-    .description('The base branch to merge into. This defaults to `master`.')
-    .default('master')
+    .description('The base branch to merge into. This will be the repo\'s default branch if none was provided.')
 })
   .description('Merges a branch into another branch')
   .example([
     { head: 'a-feature-branch' },
-    { context: 'Merge `a-feature-branch` into the `master` branch:' }
+    { context: 'Merge `a-feature-branch` into the default branch:' }
   ])
   .example([
     {
