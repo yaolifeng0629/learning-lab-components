@@ -3,8 +3,7 @@ const Joi = require('@hapi/joi')
 module.exports = Joi.object({
   branch: Joi.string()
     .meta({ label: 'Branch' })
-    .description('The name of the branch to update protection settings on. This defaults to `master`.')
-    .default('master'),
+    .description('The name of the branch to update protection settings on. This will be the repo\'s default branch if none was provided.'),
   enforce_admins: Joi.boolean()
     .meta({ label: 'Enforce protection for admins' })
     .description('If enabled, these protection settings will be enforced for repository admins.')
