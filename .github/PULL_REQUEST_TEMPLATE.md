@@ -3,7 +3,7 @@
 Link to an issue if it exists, or describe the motivation behind this change/addition.
 
 <!--
-Adding "Closes #123" to a pull request description will automatically close the issue once the pull request is merged into the `master` branch.
+Adding "Closes #123" to a pull request description will automatically close the issue once the pull request is merged into the `main` branch.
 -->
 
 ### What is being changed?

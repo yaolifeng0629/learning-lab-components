@@ -47,7 +47,7 @@ Here's what you can do to help:
 2. Clone this repository.
 3. Inside of the repository's directory, install dependencies by executing `npm install` from a terminal.
 4. Inside of the repository's directory, verify the tests initially pass on your machine by executing `npm test` from a terminal.
-5. Create a new branch from `master`.
+5. Create a new branch from `main`.
 6. Decide on a camel-cased name for your new action, e.g. `createIssue`.
   Henceforth, we will refer to this value as `${actionName}`.
 7. Inside of the repository's directory, generate a new action by executing `npm run action:init` from a terminal.
