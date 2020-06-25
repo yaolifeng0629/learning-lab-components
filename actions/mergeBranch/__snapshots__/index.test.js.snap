@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mergeBranch merges a branch into master 1`] = `
+exports[`mergeBranch merges a branch into the provided base 1`] = `
 Array [
   Array [
     Object {
-      "base": "master",
+      "base": "dev",
       "head": "branch",
       "owner": "JasonEtco",
       "repo": "example",
@@ -13,11 +13,11 @@ Array [
 ]
 `;
 
-exports[`mergeBranch merges a branch into the provided base 1`] = `
+exports[`mergeBranch merges a branch into the default branch 1`] = `
 Array [
   Array [
     Object {
-      "base": "dev",
+      "base": "main",
       "head": "branch",
       "owner": "JasonEtco",
       "repo": "example",

@@ -10,7 +10,7 @@ Updates the branch protection on a branch in the course repository
 
 ## Examples
 
-Add branch protection to the `master` branch:
+Add branch protection to the default branch:
 
 ```yaml
 type: updateBranchProtection
@@ -34,7 +34,7 @@ enforce_admins: false
 
 | Title | Property | Description | Default | Required |
 | :---- | :--- | :---------- | :------ | :------- |
-| Branch | `branch` | The name of the branch to update protection settings on. This defaults to `master`. | `master` |  |
+| Branch | `branch` | The name of the branch to update protection settings on. This will be the repo's default branch if none was provided. |  |  |
 | Enforce protection for admins | `enforce_admins` | If enabled, these protection settings will be enforced for repository admins. | `true` |  |
 | Required status checks | `required_status_checks` | A list of status checks that are required before a pull request can be merged into this branch. |  |  |
 | Required pull request reviews | `required_pull_request_reviews` |  |  |  |

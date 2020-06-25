@@ -83,7 +83,11 @@ module.exports = (payload, github) => {
     {
       event: {
         payload: {
-          repository: { owner: { login: 'JasonEtco' }, name: 'example' },
+          repository: {
+            owner: { login: 'JasonEtco' },
+            name: 'example',
+            default_branch: 'main'
+          },
           ...payload
         }
       },

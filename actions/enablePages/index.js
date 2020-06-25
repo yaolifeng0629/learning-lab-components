@@ -1,3 +1,5 @@
+const getDefaultBranch = require('../../helpers/get-default-branch')
+
 module.exports = async (context, opts) => {
   const { owner, repo } = context.repo()
   return context.github.request({
@@ -7,7 +9,7 @@ module.exports = async (context, opts) => {
     owner,
     repo,
     source: {
-      branch: opts.branch || 'master',
+      branch: opts.branch || getDefaultBranch(context),
       path: opts.path || '/'
     }
   })

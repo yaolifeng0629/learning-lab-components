@@ -8,8 +8,7 @@ module.exports = Joi.object({
     .required(),
   branch: Joi.string()
     .meta({ label: 'Branch' })
-    .description('The branch on which to create the file. This defaults to `master`.')
-    .default('master'),
+    .description('The branch on which to create the file. This will be the repo\'s default branch if none is provided.'),
   message: Joi.string()
     .meta({ label: 'Message' })
     .description('The commit message for the commit that creates the file.'),

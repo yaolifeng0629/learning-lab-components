@@ -35,7 +35,7 @@ describe('enablePages', () => {
     const result = await enablePages(context, { path: '/docs' })
     expect(nocked.isDone()).toBe(true)
     expect(result.status).toBe(201)
-    expect(result.data.opts.source.branch).toBe('master')
+    expect(result.data.opts.source.branch).toBe('main')
     expect(result.data.opts.source.path).toBe('/docs')
   })
 })

@@ -9,7 +9,7 @@ module.exports = Joi.object({
     .description('Include sub-paths, not just the top level directory.')
     .default(false)
 })
-  .description('Gets a Git tree at either a given sha or the head of master')
+  .description('Gets a Git tree at either a given sha or the head of the default branch')
   .example([
     {},
     { context: 'Get the tree at the current SHA:' }

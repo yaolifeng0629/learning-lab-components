@@ -16,8 +16,7 @@ module.exports = Joi.object({
     .required(),
   base: Joi.string()
     .meta({ label: 'Base branch' })
-    .description('The base branch of the pull request. This defaults to `master`.')
-    .default('master'),
+    .description('The base branch of the pull request. This will be the repo\'s default branch if none was provided.'),
   comments: Joi.array()
     .meta({ label: 'Comments' })
     .description('A list of response files that will be posted to the issue as comments upon creation.')
@@ -49,7 +48,7 @@ module.exports = Joi.object({
       title: 'Title of the Pull Request',
       body: 'pull-request-body.md',
       head: 'this-branch',
-      base: 'not-master'
+      base: 'not-default-branch'
     },
     { context: 'Create a pull request to a specified `base` branch:' }
   ])

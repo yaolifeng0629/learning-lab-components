@@ -1,10 +1,10 @@
 const has = require('has')
-
+const getDefaultBranch = require('../../helpers/get-default-branch')
 module.exports = async (context, opts) => {
   const pr = await context.github.pullRequests.create(context.repo({
     title: opts.title,
     head: opts.head,
-    base: opts.base || 'master',
+    base: opts.base || getDefaultBranch(context),
     body: await context.fromFile(opts.body, opts.data)
   }))
 
