@@ -12,7 +12,7 @@ describe('mergeBranch', () => {
     })
   })
 
-  it('merges a branch into thhe default branch', async () => {
+  it('merges a branch into the default branch', async () => {
     await mergeBranch(context, { head: 'branch' })
     expect(context.github.repos.merge).toHaveBeenCalled()
     expect(context.github.repos.merge.mock.calls).toMatchSnapshot()

@@ -13,7 +13,7 @@ Array [
 ]
 `;
 
-exports[`mergeBranch merges a branch into thhe default branch 1`] = `
+exports[`mergeBranch merges a branch into the default branch 1`] = `
 Array [
   Array [
     Object {
