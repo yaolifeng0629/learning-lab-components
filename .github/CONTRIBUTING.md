@@ -36,7 +36,7 @@ Here are a few things you can do that will increase the likelihood of your pull 
 
 ## Releasing a new version
 
-Project administrators have permissions to publish new releases to the GitHub Package Registry by following these steps from an up-to-date `master` branch:
+Project administrators have permissions to publish new releases to the GitHub Package Registry by following these steps from an up-to-date `main` branch:
 
 1. Bump the package version and create a commit by using one of the appropriate NPM commands:
     - `npm version major`
@@ -51,7 +51,7 @@ Once a new version of this module has been released as a package in the GitHub P
 
 In the GitHub Learning Lab codebase, a member of the GitHub Learning Lab team should:
 
-1. Create a new branch from `master`
+1. Create a new branch from the default branch
 2. Install the latest version by executing `npm install @github/learning-lab-components@latest`
 3. Verify that all tests still pass by executing `npm test`
 4. Test the specific changes made to the components since the previous version was consumed
