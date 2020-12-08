@@ -58,7 +58,7 @@
     "@hapi/joi": "^16.1.8",
     "enquirer": "^2.3.6",
     "jest": "^26.6.3",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^3.14.1",
     "lodash.isplainobject": "^4.0.6",
     "nock": "^13.0.4",
     "probot": "^7.5.3",
