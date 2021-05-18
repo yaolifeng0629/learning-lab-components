@@ -1,0 +1,31 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: x-access-token
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Europe/Vienna
+  pull-request-branch-name:
+    separator: "-"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: "@octokit/rest"
+    versions:
+    - "> 15.18.3"
+  - dependency-name: "@octokit/rest"
+    versions:
+    - ">= 16.a"
+    - "< 17"
+  - dependency-name: probot
+    versions:
+    - "> 7.5.3"
+  rebase-strategy: disabled
+  registries:
+  - git-github-com
