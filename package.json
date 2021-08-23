@@ -60,7 +60,7 @@
     "jest": "^27.0.6",
     "js-yaml": "^4.1.0",
     "lodash.isplainobject": "^4.0.6",
-    "nock": "^13.1.1",
+    "nock": "^13.1.2",
     "probot": "^7.5.3",
     "standard": "^16.0.3"
   },
